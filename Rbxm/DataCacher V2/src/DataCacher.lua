@@ -1,7 +1,7 @@
 --!nocheck
 
 --// DataCacher V2
---// @fattah412
+--// @Ellieforia
 
 --// Desc:
 --// A Datastore extension module that behaves similarly to a normal Datastore.
@@ -2496,9 +2496,7 @@ end
 RunService.Heartbeat:Connect(function()
 
 	--// Auto-saving of profiles / Auto-refreshing of LastUpdated
-
 	--// Based on the ProfileStore system, with added documentation and minor changes
-	--// https://devforum.roblox.com/t/profilestore-save-your-player-data-easy-datastore-module/3190543
 
 	local interval = GlobalSettings.AutoSave and GlobalSettings.AutoSaveInterval or GlobalSettings.SessionDeadThreshold / 2
 	local autoUpdateList = gTable.AutoUpdateList
